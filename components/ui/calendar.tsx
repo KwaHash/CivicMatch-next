@@ -37,7 +37,7 @@ function Calendar({
         sunday: (date) => date.getDay() === 0,
       }}
       modifiersClassNames={{
-        sunday: "text-red-500",
+        sunday: 'text-red-500',
       }}
       className={cn(
         'bg-background group/calendar p-3 [--cell-size:2rem] [[data-slot=card-content]_&]:bg-transparent [[data-slot=popover-content]_&]:bg-transparent',
