@@ -1,10 +1,10 @@
-"use client"
+'use client'
 
-import { Heart, MapPin, Users, TrendingUp, Search, BarChart3, Sparkles, Star } from "lucide-react";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import FeatureCard from "@/components/card/feature-card";
-import AuroraBG from "@/components/aurorabg";
+import { Heart, MapPin, Users, TrendingUp, Search, BarChart3, Sparkles, Star } from 'lucide-react'
+import Link from 'next/link'
+import AuroraBG from '@/components/aurorabg'
+import FeatureCard from '@/components/card/feature-card'
+import { Button } from '@/components/ui/button'
 
 export default function Home() {
   return (
@@ -143,5 +143,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }
