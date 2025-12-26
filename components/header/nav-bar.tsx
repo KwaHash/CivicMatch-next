@@ -17,18 +17,22 @@ const NavBar = () => {
         <div className="flex justify-between h-20">
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-bold text-indigo-600 hover:text-indigo-700 transition-all duration-300 ease-out">
-              LOGO
+              CivicMatch
             </span>
           </Link>
 
-          <div className="hidden xl:flex iterms-center space-x-10">
+          <div className="hidden xl:flex items-center space-x-10">
             <NavLink 
-              text="Link 1"
-              linkUrl="/link-1"
+              text="マッチング"
+              linkUrl="/matching"
             />
             <NavLink 
-              text="Link 2"
-              linkUrl="/link-2"
+              text="地域検索"
+              linkUrl="/search"
+            />
+            <NavLink 
+              text="政治家登録"
+              linkUrl="/politician/register"
             />
           </div>
 
@@ -53,14 +57,19 @@ const NavBar = () => {
         <div className="xl:hidden bg-white border-t">
           <div className="px-4 pt-2 pb-4 space-y-2">
             <MobileNavLink
-              text="Link 1"
+              text="マッチング"
               onClick={() => setIsMenuOpen(false)}
-              linkUrl="/link-1"
+              linkUrl="/matching"
             />
             <MobileNavLink
-              text="Link 2"
+              text="地域検索"
               onClick={() => setIsMenuOpen(false)}
-              linkUrl="/link-2"
+              linkUrl="/search"
+            />
+            <MobileNavLink
+              text="政治家登録"
+              onClick={() => setIsMenuOpen(false)}
+              linkUrl="/politician/register"
             />
           </div>
         </div>
