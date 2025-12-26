@@ -1,8 +1,8 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
 import { Instagram, Youtube, Twitter, Facebook, ExternalLink, Heart, MessageCircle, Share2 } from 'lucide-react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import  { type SNSPost } from '@/lib/types'
 
