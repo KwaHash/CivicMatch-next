@@ -31,7 +31,7 @@ const AuroraBG = () => {
         }
       `}</style>
     </div>
-  );
+  )
 }
 
-export default AuroraBG;
+export default AuroraBG
