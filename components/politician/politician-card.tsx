@@ -1,8 +1,8 @@
-import Link from 'next/link'
-import Image from 'next/image'
 import { MapPin } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { type Politician } from '@/lib/types'
 import { getCategoryLabel } from '@/lib/utils'
-import { Politician } from '@/lib/types'
 
 export default function PoliticianCard({ politician }: { politician: Politician }) {
   return (

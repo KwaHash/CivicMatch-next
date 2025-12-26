@@ -1,14 +1,14 @@
 'use client'
 
-import Link from 'next/link'
 import { useState } from 'react'
 import { ArrowRight, ArrowLeft, CheckCircle2 } from 'lucide-react'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Label } from '@/components/ui/label'
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group'
 import { BASIC_MATCHING_QUESTIONS } from '@/lib/constants/matching-questions'
-import { getCategoryLabel } from '@/lib/utils'
 import  { type Answer } from '@/lib/types'
+import { getCategoryLabel } from '@/lib/utils'
 
 export default function MatchingPage() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
@@ -108,20 +108,20 @@ export default function MatchingPage() {
               className="space-y-4"
             >
               {currentQuestion.options.map((option, index) => {
-                const isSelected = currentAnswer === option;
+                const isSelected = currentAnswer === option
                 return (
                   <Label
                     key={index}
                     htmlFor={`option-${index}`}
                     className={`
                       flex items-center space-x-3 border-2 rounded-sm transition-colors p-3 flex-1 cursor-pointer text-lg
-                      ${isSelected ? "border-pink-400 bg-pink-50 text-pink-700 font-bold" : "border-gray-200 hover:border-indigo-300 hover:bg-indigo-50"}
+                      ${isSelected ? 'border-pink-400 bg-pink-50 text-pink-700 font-bold' : 'border-gray-200 hover:border-indigo-300 hover:bg-indigo-50'}
                     `}
                   >
                     <RadioGroupItem value={option} id={`option-${index}`} className="hidden" />
                     {option}
                   </Label>
-                );
+                )
               })}
             </RadioGroup>
           )}
