@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { ReactNode } from "react"
+import { type ReactNode } from 'react'
+import Link from 'next/link'
 
 interface FeatureCardProps {
   icon: ReactNode,
@@ -27,4 +27,4 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   )
 }
 
-export default FeatureCard;
+export default FeatureCard
