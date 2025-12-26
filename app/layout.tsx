@@ -25,15 +25,15 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(env.NEXT_PUBLIC_HOST),
-  title: '',
-  applicationName: '',
-  description: '',
+  title: '政治家と国民をつなぐマッチングプラットフォーム',
+  applicationName: '政治家と国民をつなぐマッチングプラットフォーム',
+  description: '政治家と国民をSNSベースでマッチングし、政治参加を「推し活」として再定義するプラットフォーム。政策理解・寄付・投票行動までを一貫支援します。',
   openGraph: {
-    title: '',
-    siteName: '',
-    description: '',
+    title: '政治家と国民をつなぐマッチングプラットフォーム',
+    siteName: '政治家と国民をつなぐマッチングプラットフォーム',
+    description: '政治家と国民をSNSベースでマッチングし、政治参加を「推し活」として再定義するプラットフォーム。',
     type: 'website',
-    images: [''],
+    images: ['/og-image.png'],
   },
   icons: [
     {
@@ -71,7 +71,7 @@ export default function RootLayout({
       <PreloadResources />
       <html lang='jp' suppressHydrationWarning>
       <body className={notoSansJP.className}>
-        <HolyLoader color="#9333ea" height="1px" easing="linear" />
+        <HolyLoader color="#9333ea" height="2px" easing="linear" />
         <Providers>
           <div className='flex flex-col w-full min-h-screen overflow-x-hidden overflow-y-auto'>
             <NavBar />
