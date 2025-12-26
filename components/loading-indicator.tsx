@@ -1,7 +1,7 @@
 import React from 'react'
 import { OrbitProgress } from 'react-loading-indicators'
 
-const Loading = () => {
+const LoadingIndicator = () => {
   return (
     <div className="fixed w-full h-screen flex z-50 items-center justify-center bg-[#f9fafb] bg-opacity-80 inset-0">
       <div className="sm:hidden">
@@ -14,4 +14,4 @@ const Loading = () => {
   )
 }
 
-export default Loading
+export default LoadingIndicator
