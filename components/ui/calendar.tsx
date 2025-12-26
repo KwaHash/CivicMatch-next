@@ -29,10 +29,16 @@ function Calendar({
   const jaMonthFormatter = (date: Date) =>
     `${date.getMonth() + 1}月`
 
-  return (
+    return (
     <DayPicker
       showOutsideDays={showOutsideDays}
       locale={ja}
+      modifiers={{
+        sunday: (date) => date.getDay() === 0,
+      }}
+      modifiersClassNames={{
+        sunday: 'text-red-500',
+      }}
       className={cn(
         'bg-background group/calendar p-3 [--cell-size:2rem] [[data-slot=card-content]_&]:bg-transparent [[data-slot=popover-content]_&]:bg-transparent',
         String.raw`rtl:**:[.rdp-button\_next>svg]:rotate-180`,
@@ -92,8 +98,9 @@ function Calendar({
         table: 'w-full border-collapse',
         weekdays: cn('flex', defaultClassNames.weekdays),
         weekday: cn(
-          'text-muted-foreground flex-1 select-none rounded-md text-[0.8rem] font-normal',
-          defaultClassNames.weekday
+          'text-muted-foreground flex-1 select-none rounded-md text-[0.8rem] font-semibold',
+          defaultClassNames.weekday,
+          '[&:first-child]:text-red-500'
         ),
         week: cn('mt-2 flex w-full', defaultClassNames.week),
         week_number_header: cn(
